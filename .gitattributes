@@ -1,0 +1,4 @@
+# Keep LF in the repository for text sources; text files are markdown and python.
+*.md text eol=lf
+*.py text eol=lf
+LICENSE text eol=lf
