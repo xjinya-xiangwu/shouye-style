@@ -61,6 +61,18 @@ git clone git@github.com:xjinya-xiangwu/shouye-style.git ~/.workbuddy/skills/sho
 
 克隆后直接说「用兽楼处体写一篇……」即可触发。
 
+> **网络受限环境**：若 `github.com` 直连被重置，可改走 SSH over 443。
+> 在 `~/.ssh/config` 加入：
+>
+> ```
+> Host github.com
+>     HostName ssh.github.com
+>     Port 443
+>     User git
+> ```
+>
+> 之后照常 `git clone git@github.com:...`。skills CLI 默认走 HTTPS，不受此配置影响。
+
 ---
 
 ## 怎么用
